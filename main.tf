@@ -1,4 +1,5 @@
 terraform {
+  #required_version = ">= 1.5.0"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -11,7 +12,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg_demo" {
-  name     = "rg-terraform-demo"
-  location = "eastus"
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-prueba"
+  location = "brazilsouth"
 }
